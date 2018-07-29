@@ -1,0 +1,160 @@
+.application {
+    padding: 10px;
+    min-width: 350px;
+    box-sizing: border-box;
+}
+
+.application a {
+    color: #207eda;
+}
+
+.application .navigation {
+    background-color: #eee;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.application .navigation .separator::after {
+    content: ' > ';
+    margin: 0 5px;
+}
+
+.application .search-input {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.application .search-input input {
+    background-color: #fff2b3;
+    border: 1px solid #ded396;
+    border-radius: 10px;
+    position: relative;
+    left: 0;
+    right: 0;
+    width: calc(100% - 60px);
+    max-width: 600px;
+    height: 26px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 100%;
+    outline-width: 0;
+}
+
+.application .movie-list {
+    text-align: center;
+}
+
+.application .movie-list .movie-list-item {
+    width: 200px;
+    height: 350px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.application .movie-list .movie-list-item:hover {
+    color: #ff0097;
+}
+
+.application .movie-list .movie-list-item .poster {
+    width: 200px;
+    height: 296px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #e2dbcd;
+}
+
+.application .movie-list .movie-block {
+    width: 200px;
+    height: 296px;
+    display: inline-block;
+    margin: 10px 10px 54px 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .application .movie-list .movie-list-item {
+        width: 300px;
+        height: 480px;
+        margin: 10px;
+    }
+    .application .movie-list .movie-list-item .poster {
+        width: 300px;
+        height: 440px;
+    }
+}
+
+.application .movie-list .show-more {
+    cursor: pointer;
+    font-size: 120%;
+}
+
+.application .movie-list .error {
+    color: #d40000;
+}
+
+.application .movie-description {
+    text-align: center;
+}
+
+.application .movie-description .poster {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 20px 20px 20px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 10px;
+}
+
+.application .movie-description .description {
+    width: 100%;
+    max-width: 600px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.application .movie-description .year {
+    color: #555;
+    font-size: 90%;
+}
+.application .movie-description .year::before{
+    content: '(';
+}
+.application .movie-description .year::after{
+    content: ')';
+}
+
+.application .movie-description .row {
+    padding: 5px 10px;
+    background-color: #fdf7c7;
+    border-radius: 10px;
+    margin: 2px 0;
+}
+
+.application .movie-description .row span {
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.application .movie-description .row span:first-child {
+    width: 85px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.application .movie-description .row span:first-child::after {
+    content: ':';
+}
+
+.application .movie-description .row span:last-child {
+    width: calc(100% - 85px);
+    padding-left: 10px;
+}

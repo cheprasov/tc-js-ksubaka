@@ -1,0 +1,43 @@
+{
+  "name": "tc-js-ksubaka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.4.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-test-renderer": "^16.4.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.7.0",
+    "webpack-cli": "^2.1.2"
+  },
+  "dependencies": {},
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/",
+    "moduleNameMapper": {
+      "/SRC(.*)$": "<rootDir>/src/$1"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/test/setup.js"
+  }
+}
